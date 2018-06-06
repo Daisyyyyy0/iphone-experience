@@ -1,0 +1,209 @@
+@charset "UTF-8";
+* {
+    font-family: 微軟正黑體;
+    box-sizing: border-box;
+    vertical-align: top;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.phone {
+    width: 260px;
+    padding: 12px 8px 8px;
+    background-color: #f9f9f9;
+    position: relative;
+    left: 0;
+    border-radius: 15px;
+    transition-duration: 0.3s;
+}
+
+.top {
+    height: 50px;
+    position: relative;
+    border-radius: 5px 5px 0 0;
+}
+
+.top .inner {
+    border: none;
+    width: 64px;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top .inner .camera {
+    width: 7px;
+    height: 7px;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    background-color: #111;
+    position: absolute;
+}
+
+.top .inner .earpiece {
+    border-radius: 4px;
+    background-color: #000;
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    right: 0;
+    top: 2px;
+}
+
+.screen {
+    border: 1px solid #ccc;
+    height: 350px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.screen .pages {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: relative;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.35s;
+}
+
+.screen .pages .page {
+    color: white;
+    letter-spacing: 2px;
+    font-size: initial;
+    width: 100%;
+    height: 100%;
+    white-space: normal;
+    user-select: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.screen .pages .page:before {
+    content: "";
+    display: block;
+    height: 30px;
+    margin: -20px;
+    background-color: inherit;
+}
+
+.screen .pages .page h1,
+.screen .pages .page h2 {
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.screen .pages .page1 {
+    background-color: #F7C454;
+}
+
+.screen .pages .page1 .picture {
+    width: 280px;
+    height: 270px;
+    border-radius: 50%;
+    background-color: #FAAE43;
+}
+
+.screen .pages .page2 {
+    background-color: #54e2e8;
+}
+
+.screen .pages .page2 h2 {
+    color: #999;
+    font-size: 36px;
+    line-height: 38px;
+}
+
+.screen .pages .page2 p {
+    margin: 10px -20px;
+    padding: 15px 10px 30px;
+    height: 250px;
+    font-size: 12px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    background-color: #365999;
+}
+
+.screen .pages .page3 {
+    color: #c3c3c3;
+    font-size: 24px;
+    line-height: 36px;
+    background-color: #D1F5AB;
+}
+
+.bottom {
+    height: 58px;
+    position: relative;
+    border-radius: 0 0 5px 5px;
+}
+
+.bottom .button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.bottom .button .circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.bottom .button .circle:hover {
+    background-color: #e6e6e6;
+}
+
+.status,
+.phonename {
+    color: #fff;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.phonename {
+    margin-top: 10px;
+}
+
+.buttons button {
+    background-color: transparent;
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+}
